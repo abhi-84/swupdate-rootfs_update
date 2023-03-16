@@ -1,0 +1,23 @@
+software =
+{
+    version = "1.0.1";
+    u54 = {
+        hardware-compatibility: [ "1.0"];
+        files: (
+		{
+			filename = "core-image-base-exaleapsemi.ext4";
+			device = "/dev/update";
+			type = "raw";
+			#sha256 = "527aff782145dcc686b94d06a94b2832cacded600048216730f4183452452859";
+			#compressed = true;
+		}
+        );
+       scripts: (
+		{
+			filename = "update.sh";
+			type = "shellscript";
+		},
+
+       );
+    };
+}
